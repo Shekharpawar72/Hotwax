@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Discover</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="shop.html" class="logo">ShopEasy.</a>
+        <div class="nav-links">
+            <span id="userGreeting" style="font-weight: 600;">Hello, User</span>
+            <a href="cart.html" class="nav-btn">
+                <i class="fas fa-shopping-cart"></i> 
+                <span id="cartCount" class="cart-badge">0</span>
+            </a>
+            <a href="#" id="logoutBtn" class="nav-btn" style="color: var(--text-sec)"><i class="fas fa-sign-out-alt"></i></a>
+        </div>
+    </nav>
+
+    <div class="hero-section">
+        <h1>Discover Future Tech</h1>
+        <p>The best products at the best prices, delivered instantly.</p>
+    </div>
+
+    <div class="controls">
+        <div class="search-bar form-group" style="margin-bottom: 0;">
+            <input type="text" id="searchInput" placeholder="Search for products...">
+        </div>
+        <select id="categoryFilter" class="filter-dropdown">
+            <option value="all">All Categories</option>
+            </select>
+    </div>
+
+    <div id="loader" class="loader hidden"></div>
+    <div id="productsGrid" class="products-grid">
+        </div>
+
+    <script src="storage.js"></script>
+    <script src="common.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>
